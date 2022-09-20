@@ -24,6 +24,10 @@ function devuelveHola(texto='Hola'){
 console.log(devuelveHola())
 console.log(devuelveHola('Hello'))
 
+function devuelve(name='Pedo'){
+    return `Hola ${name}`
+}
+
 //FUNCIONES ANÓNIMAS
 
 var miNumero=function(numero=7){
@@ -31,3 +35,13 @@ var miNumero=function(numero=7){
 }
 console.log(miNumero())
 console.log(miNumero(89))
+
+//ARROW FUNCTION
+//Tiene la particularidad de que pueden aceder
+//a un objeto que se llama this
+
+const mynumber1=()=>'Hello'
+const mynumber2=(numero=19)=>{
+    return numero
+}
+console.log(mynumber2(57))
