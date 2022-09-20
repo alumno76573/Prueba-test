@@ -22,7 +22,7 @@ let varDefinida="77777777"
 console.log(varDefinida)
 
 if(true){
-    const varLocal="cariable local"
+    const varLocal="variable local"
 }
 //console.log(varLocal)
 function sayHello(){
