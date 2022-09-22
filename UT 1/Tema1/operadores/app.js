@@ -33,4 +33,4 @@ console.log(num.toFixed(2))
 
 let decimal=12.3456789
 console.log(decimal.toFixed(2))
-console.log(decimal.toFixed(3))                 
+console.log(decimal.toFixed(3)) 
