@@ -27,3 +27,8 @@ var persona1=new Object({
         console.log(`Hola soy ${this.nombre}`)
     }
 })
+
+const mycar=new Object()
+mycar.make='Ford'
+mycar.model='Puma'
+mycar.year='2020'
