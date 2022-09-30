@@ -40,12 +40,26 @@
         this._UltimosMovs=new Array(10);
         this._comprobar=function comprobar(comprobante) {
             if (isNaN(comprobante)){
-                
+                console.warn('No se ha introducido un número')
+                return false;
+            } else {
+                return true
             }
         }
         this._ingresar=function ingresar(ingreso) {
-            this._saldo=saldo+ingreso
-            this._ULtimosMovs.push(ingreso)
+            if (comprobar(ingreso)=true){
+                this._saldo=saldo+ingreso
+                this._ULtimosMovs.push(ingreso)
+            }
+        }
+        this._sacar=function sacar(retirada) {
+            if (comprobar(retirada)=true){
+                this._saldo=saldo-retirada
+                this._UltimosMovs.push(retirada)
+            }
+        }
+        this._verMovs=function verMovs() {
+          console.log(UltimosMovs)
         }
     }
   </script>
