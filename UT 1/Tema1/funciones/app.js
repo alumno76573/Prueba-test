@@ -37,7 +37,7 @@ console.log(miNumero())
 console.log(miNumero(89))
 
 //ARROW FUNCTION
-//Tiene la particularidad de que pueden aceder
+//Tiene la particularidad de que pueden acceder
 //a un objeto que se llama this
 
 const mynumber1=()=>'Hello'
