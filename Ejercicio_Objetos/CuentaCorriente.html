@@ -47,13 +47,13 @@
             }
         }
         this._ingresar=function ingresar(ingreso) {
-            if (comprobar(ingreso)=true){
+            if (_comprobar(ingreso)=true){
                 this._saldo=saldo+ingreso
                 this._ULtimosMovs.push(ingreso)
             }
         }
         this._sacar=function sacar(retirada) {
-            if (comprobar(retirada)=true){
+            if (_comprobar(retirada)=true){
                 this._saldo=saldo-retirada
                 this._UltimosMovs.push(retirada)
             }
@@ -61,7 +61,14 @@
         this._verMovs=function verMovs() {
           console.log(UltimosMovs)
         }
+        this._verSaldo=function verSaldo() {
+          console.log(saldo)
+        }
     }
+
+    var prueba=new CuentaCorriente(184118648,'68498161N',64841989,100);
+    prueba._ingresar(50)
+
   </script>
 </body>
 
