@@ -18,7 +18,7 @@
     <!-- place navbar here -->
   </header>
   <main>
-    
+
   </main>
   <footer>
     <!-- place footer here -->
@@ -26,18 +26,18 @@
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
-  </script>
+    </script>
   <script type="text/Javascript">
     function CuentaCorriente(NumeroCuenta,DNI,telefono,saldo) {
         this._NumeroCuenta=NumeroCuenta
         this._DNI=DNI
         this.telefono=telefono
         this._saldo=saldo
-        this._UltimosMovs=new Array(10);
+        this._UltimosMovs=movimientos=new Array(10);
         this._comprobar=function comprobar(comprobante) {
             if (isNaN(comprobante)){
                 console.warn('No se ha introducido un número')
@@ -47,15 +47,13 @@
             }
         }
         this._ingresar=function ingresar(ingreso) {
-            if (_comprobar(ingreso)=true){
-                this._saldo=saldo+ingreso
-                this._ULtimosMovs.push(ingreso)
-            }
+            this._saldo=saldo+ingreso
+            this._ULtimosMovs.push(ingreso)
         }
         this._sacar=function sacar(retirada) {
             if (_comprobar(retirada)=true){
-                this._saldo=saldo-retirada
-                this._UltimosMovs.push(retirada)
+                saldo=saldo-retirada
+                movimientos.push(retirada);
             }
         }
         this._verMovs=function verMovs() {
