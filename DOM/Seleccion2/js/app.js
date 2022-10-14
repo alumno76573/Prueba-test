@@ -5,6 +5,8 @@ special.style.color="red"
 let lista_elementos=document.querySelectorAll("li")
 console.log(lista_elementos)
 
+let nodoclase=document.querySelector(".selector_class")
+
 //Diferentes bucles que podemos usar para aplicarle un estilo a cada item de un array
 
 /*for (let i=0;i<lista_elementos.length;i++){

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>Title</title>
@@ -36,6 +36,8 @@
         constructor(){
             this.map=new Map();
             this.duplicados=new Array(50);
+            this.ordenadosMayorMenor=new Array(50);
+            this.introducidos=new Array(50);
         }
         rellenarMap(){
             for (let i=0;i<49;i++){
@@ -50,15 +52,45 @@
             console.log(this.duplicados[0]);
         }
         repetirDuplicados(){
-            for (let i=0;i<60;i++){
+            for (let i=0;i<49;i++){
                 this.agruparDuplicados();
-            }
+            }  
         }
+        incrementarRepetidos(){
+          for (let i=0;i<49;i++){
+            this.agruparDuplicados();
+          }
+        }
+        ordenarPorRepetidos(){
+          let mayor
+          let valor
+          for (let j=0;j<this.duplicados.length;j++){
+            mayor=0;
+            valor=0;
+            for (let i=0;i<this.duplicados.length;i++){
+              if (this.map.get(i)>mayor){
+                for (let k=0;k<this.introducidos,length;k++){
+                  if (this.introducidos[k]!=i){
+                    mayor=this.map.get(i);
+                    valor=i;
+                  }
+                }
+              }
+              this.introducidos.unshift(`${valor}`);
+            }
+            this.ordenadosMayorMenor.unshift(`Valor: ${valor}, Repeticiones: ${mayor}`);
+            console.log(this.ordenadosMayorMenor[j]);
+          }
+        }
+        
     }
     var loteria1=new loteria();
     loteria1.rellenarMap();
     loteria1.agruparDuplicados();
     loteria1.repetirDuplicados();
+    console.log('------------------------------------------------------------')
+    loteria1.incrementarRepetidos();
+    loteria1.ordenarPorRepetidos();
   </script>
 </body>
 

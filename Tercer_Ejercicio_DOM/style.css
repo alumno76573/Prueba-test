@@ -1,0 +1,15 @@
+div{
+    background-color: greenyellow;
+    padding-left: 1rem;
+    border: solid 1px black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+ul{
+    display: none;
+    margin: 0;
+    padding-bottom: 1rem;
+}

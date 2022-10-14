@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <p id="texto1" class="texto1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ea pariatur veniam, animi nobis illum facilis
+            consequatur hic velit distinctio, quo deserunt possimus dicta totam adipisci perferendis optio. Modi, at.
+        </p>
+        <button class="Ocultar1" onclick="oculta1()">Ocultar texto</button>
+        <p id="texto2" class="texto2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ea pariatur veniam, animi nobis illum facilis
+            consequatur hic velit distinctio, quo deserunt possimus dicta totam adipisci perferendis optio. Modi, at.
+        </p>
+        <button class="Ocultar2" onclick="oculta2()">Ocultar texto</button>
+        <p id="texto3" class="texto3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ea pariatur veniam, animi nobis illum facilis
+            consequatur hic velit distinctio, quo deserunt possimus dicta totam adipisci perferendis optio. Modi, at.
+        </p>
+        <button class="Ocultar3" onclick="oculta3()">Ocultar texto</button>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        function oculta1(){
+            let ocultarPrimero=document.getElementById("texto1")
+            if (ocultarPrimero.style.display=="none"){
+                ocultarPrimero.style.display="block"
+            } else {
+                ocultarPrimero.style.display="none"
+            }
+        }
+        function oculta2(){
+            let ocultarSegundo=document.getElementById("texto2")
+            if (ocultarSegundo.style.display=="none"){
+                ocultarSegundo.style.display="block"
+            } else {
+                ocultarSegundo.style.display="none"
+            }
+        }
+        function oculta3(){
+            let ocultarTercero=document.getElementById("texto3")
+            if (ocultarTercero.style.display=="none"){
+                ocultarTercero.style.display="block"
+            } else {
+                ocultarTercero.style.display="none"
+            }
+        }
+    </script>
+</body>
+
+</html>
