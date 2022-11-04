@@ -43,6 +43,32 @@
         </ul>
     </div>
   </main>
+  /*<nav id="menu">
+    <ul>
+      <li>
+        <a href="#">Item 1</a>
+        <ul>
+          <li><a href="#">Opcion 1</a></li>
+          <li><a href="#">Opcion 2</a></li>
+          <li class="separador"></li>
+          <li><a href="#">Opcion 3</a></li>
+          <li><a href="#">Opcion 4</a></li>
+          <li><a href="#">Opcion 5</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Item 2</a>
+        <ul>
+          <li><a href="#">Opcion 1</a></li>
+          <li class="separador"></li>
+          <li><a href="#">Opcion 2</a></li>
+          <li><a href="#">Opcion 3</a></li>
+          <li><a href="#">Opcion 4</a></li>
+          <li><a href="#">Opcion 5</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>*/
   <footer>
     <!-- place footer here -->
   </footer>
@@ -79,7 +105,59 @@
             lista3.style.display="none"
         }
     }
+
+    //Correccion
+    /*window.addEventListener("load", e=>{
+      const encabezados=document.querySelectorAll("#menu>ul>li>a")
+      console.log(encabezados);
+
+      //asignamos la funcion manejadora que se despliega
+      encabezados.forEach(Element=>{
+        Element.addEventListener("click",despliega);
+      })
+
+      function despliega(e){
+        e.preventDefault();
+        const nodo=e.target;
+        console.log(nodo);
+        var ulmenu=nodo.parentNode.getElementsByTagName("ul")[0];
+
+        if (ulmenu.style.display=="block"){
+          ulmenu.style.display="none"
+        } else {
+          ulmenu.style.display="block"
+        }
+      }
+    }*/
+
+    //Correcion mejorada
+    /*window.addEventListener("load", e=>{
+      const encabezados=document.querySelectorAll("#menu>ul>li>a")
+      console.log(encabezados);
+
+      //asignamos la funcion manejadora que se despliega
+      encabezados.forEach(Element=>{
+        Element.addEventListener("click",despliega);
+      })
+
+      function despliega(e){
+        e.preventDefault();
+        const nodo=e.target;
+        var lipadre=nodo.parentNode;
+
+        //Si esta mostrando oculta sobre el que hemos pinchado
+        if (lipadre.classList.contains("mostrar")){
+          lispadre.classList.remove("mostrar")
+          //sino, oculta otro si lo hubiese y muestra sobre el que pinta
+        } else {
+          mostrados=lipadre.parentNode.getElementsByClassName("mostrar")
+          for (var i=0;i<mostrados.lenght;i++){
+            mostrados[i].classList.remove("mostrar");
+          }
+          lispadre.classList.add("mostrar");
+        }
+      }
+    }*/
   </script>
 </body>
-
 </html>

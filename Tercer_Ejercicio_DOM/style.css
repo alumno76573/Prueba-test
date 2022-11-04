@@ -13,3 +13,28 @@ ul{
     margin: 0;
     padding-bottom: 1rem;
 }
+/*
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+#menu li a{
+    display: block;
+    color: black;
+    padding: 5em;
+}
+#menu>ul>li>a{
+    background-color: #C8FFAD;
+}
+#menu li ul{
+    background-color: #E4ADFF;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+#menu li.mostrar ul{
+    max-height: 500px;
+}*/
