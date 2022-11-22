@@ -27,10 +27,12 @@ document.addEventListener("DOMContentLoaded", function(evento){
             } else {
                 valido=false
                 password.parentNode.classList.add("error")
-                password.parentNode.querySelector("p").textContent="Contraseña inválido"
+                password.parentNode.querySelector("p").textContent="Contraseña inválida"
             }
         })
-        
+        if (valido==true){
+            window.open("blog.html")
+        }
         
     })
     
