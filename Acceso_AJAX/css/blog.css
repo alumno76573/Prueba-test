@@ -1,0 +1,9 @@
+.card{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.enlace{
+    text-decoration: none;
+    color: rgb(112, 111, 111);
+    cursor: pointer;
+}
