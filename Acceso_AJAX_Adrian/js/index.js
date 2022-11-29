@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(evento){
     const email=document.getElementById("email")
     const password=document.getElementById("password")
     const form=document.getElementById("form")
-    let valido=true
+    let valido=false
 
     form.addEventListener("submit", function(evento){
         evento.preventDefault()
@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(evento){
             if (correo!=null){
                 email.parentNode.classList.remove("error")
                 email.parentNode.querySelector("p").textContent=""
+                valido=true
             } else {
                 valido=false
                 email.parentNode.classList.add("error")
@@ -24,16 +25,14 @@ document.addEventListener("DOMContentLoaded", function(evento){
             if (zipcode==password.value){
                 console.log("si")
                 password.parentNode.querySelector("p").textContent=""
+                valido=true
+                window.open("blog.html")
             } else {
-                valido=false
+                valido==false
                 password.parentNode.classList.add("error")
                 password.parentNode.querySelector("p").textContent="Contraseña inválida"
             }
         })
-        if (valido==true){
-            window.open("blog.html")
-        }
-        
     })
     
 })

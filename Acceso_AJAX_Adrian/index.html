@@ -21,19 +21,19 @@
     <form action="#" id="form">
       <img src="img/descarga.png" alt="Imagen IES Azarquiel">
       <div class="mb-3">
-        <label for="email" class="form-label">Email:</label>
-        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId">
+        <label for="email" class="form-label label">Email:</label>
+        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Introduce un correo">
         <p class="error-feedback"></p>
       </div>
       <div class="mb-3">
-        <label for="password" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId">
+        <label for="password" class="form-label ">Contraseña</label>
+        <input type="password" class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="Introduce la contraseña">
         <p class="error-feedback"></p>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="Recordarme" id="recordar">
-        <label class="form-check-label" for="recordar">
-          Recordarme
+      <div class="form-check flex separar">
+        <input class="form-check-input checkbox" type="checkbox" value="Recordarme" id="recordar">
+        <label class="form-check-label recuerdame" for="recordar">
+          Recuérdame
         </label>
       </div>
       <button type="submit" class="btn btn-primary" id="login">Login</button>
