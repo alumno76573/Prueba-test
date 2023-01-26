@@ -1,0 +1,29 @@
+[
+    {
+        "nombre":"Pascual Moya Cañadas",
+        "pais":"España",
+        "imagen":"1",
+        "cargo":"Ingeniero de Sistemas",
+        "empresa":"Orange",
+        "texto":"Siempre haciendo por los demás",
+        "correo":"Pascualmoya@ies-azarquiel.es"
+    },
+    {
+        "nombre":"Eduardo Collado",
+        "pais":"España",
+        "imagen":"2",
+        "cargo":"Ingeniero de Sistemas",
+        "empresa":"NetBerry",
+        "texto":"Siempre haciendo por los demás",
+        "correo":"Eduardocollado@ies-azarquiel.es"
+    },
+    {
+        "nombre":"Inés Moya",
+        "pais":"España",
+        "imagen":"3",
+        "cargo":"JCCM",
+        "empresa":"NetBerry",
+        "texto":"Siempre haciendo por los demás",
+        "correo":"Inesmoya@ies-azarquiel.es"
+    }
+]
